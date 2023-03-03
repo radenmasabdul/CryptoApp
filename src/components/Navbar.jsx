@@ -75,14 +75,14 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           {/* fitur */}
-          <li tabIndex={0}>
+          <li tabIndex={0} className="z-10">
             <a>
               Fitur
               <span className="badge bg-red-500 border-none text-white rounded-md">
                 Baru
               </span>
             </a>
-            <ul className="menu bg-base-100 w-[24rem] p-2 rounded-box">
+            <ul className="menu w-[24rem] p-2 rounded-box">
               <div className="card w-auto bg-base-100 shadow-xl px-2 py-2">
                 <li>
                   <span>
@@ -143,9 +143,9 @@ const Navbar = () => {
           </li>
 
           {/* edukasi */}
-          <li tabIndex={0}>
+          <li tabIndex={0} className="z-10">
             <a>Edukasi</a>
-            <ul className="menu bg-base-100 w-[24rem] p-2 rounded-box">
+            <ul className="menu w-[24rem] p-2 rounded-box">
               <div className="card w-auto bg-base-100 shadow-xl px-2 py-2">
                 <li>
                   <span>
@@ -213,9 +213,9 @@ const Navbar = () => {
           </li>
 
           {/* ikuti kami */}
-          <li tabIndex={0} className="mx-4">
+          <li tabIndex={0} className="mx-4 z-10">
             <a>Ikuti Kami</a>
-            <ul className="menu bg-base-100 w-[24rem] p-2 rounded-box">
+            <ul className="menu w-[24rem] p-2 rounded-box">
               <div className="card w-auto bg-base-100 shadow-xl px-2 py-2">
                 <li>
                   <span>
@@ -278,9 +278,9 @@ const Navbar = () => {
           </li>
 
           {/* blog & news */}
-          <li tabIndex={0}>
+          <li tabIndex={0} className="z-10">
             <a>Blog & News</a>
-            <ul className="menu bg-base-100 w-[24rem] p-2 rounded-box">
+            <ul className="menu w-[24rem] p-2 rounded-box">
               <div className="card w-auto bg-base-100 shadow-xl px-2 py-2">
                 <li>
                   <span>
@@ -324,9 +324,9 @@ const Navbar = () => {
           </li>
 
           {/* karier */}
-          <li tabIndex={0} className="mx-4">
+          <li tabIndex={0} className="mx-4 z-10">
             <a>Karier</a>
-            <ul className="menu bg-base-100 w-[24rem] p-2 rounded-box">
+            <ul className="menu w-[24rem] p-2 rounded-box">
               <div className="card w-auto bg-base-100 shadow-xl px-2 py-2">
                 <li>
                   <span>

@@ -16,7 +16,7 @@ const ContentList = () => {
   return (
     <div className="overflow-x-scroll lg:overflow-hidden">
       <div className="container">
-        <div className="grid grid-flow-col md:grid-cols-2 lg:grid-cols-10 gap-2 mx-10">
+        <div className="grid grid-flow-col md:grid-cols-2 lg:grid-cols-10 gap-2 lg:mx-10">
           <div className="justify-center rounded-md py-2 bg-white cursor-pointer hover:bg-blue-200">
             <div className="grid grid-flow-row auto-rows-max ">
               <div className="grid grid-flow-col auto-cols-max items-center">

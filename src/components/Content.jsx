@@ -1,7 +1,6 @@
 import React from "react";
 
-import { FaBitcoin } from "react-icons/fa";
-import { FaCaretUp } from "react-icons/fa";
+import { FaBitcoin, FaCaretUp } from "react-icons/fa";
 
 const Content = () => {
   return (

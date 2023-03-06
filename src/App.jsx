@@ -5,6 +5,7 @@ import UpContent from "./components/UpContent";
 import Content from "./components/Content";
 import ContentList from "./components/ContentList";
 import CryptoList from "./components/CryptoList";
+import UpFooter from "./components/UpFooter";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Content />
       <ContentList />
       <CryptoList />
+      <UpFooter />
     </>
   );
 };

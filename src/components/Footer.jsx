@@ -5,8 +5,8 @@ import Brand from "../assets/brand-ambassador.png";
 const Footer = () => {
   return (
     <>
-      <div className="relative">
-        <main className="bg-blue-600 mx-10 rounded-t-3xl absolute bottom-48 inset-x-1 h-full">
+      <main className="relative">
+        <section className="bg-blue-600 mx-10 rounded-t-3xl absolute bottom-64 inset-x-1 h-full">
           <div className="mx-10">
             <div className="grid grid-cols-2">
               <div class="grid grid-flow-row auto-rows-max py-10">
@@ -31,20 +31,74 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </main>
+        </section>
 
-        <footer className="footer p-10 bg-base-200 text-base-content mt-20">
+        <footer className="footer p-11 bg-base-200 text-base-content mt-10">
           <div>
             <svg
-              width="50"
-              height="50"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              fillRule="evenodd"
-              clipRule="evenodd"
-              className="fill-current"
+              width="94"
+              height="20"
+              viewBox="0 0 94 20"
+              class="sc-1cgb3j6-7 cWQvkx"
             >
-              <path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path>
+              <defs>
+                <filter
+                  x="-.3%"
+                  y="-.9%"
+                  width="100.6%"
+                  height="101.9%"
+                  filterUnits="objectBoundingBox"
+                  id="pintu_logo_mono__b"
+                >
+                  <feGaussianBlur
+                    stdDeviation="3"
+                    in="SourceAlpha"
+                    result="shadowBlurInner1"
+                  ></feGaussianBlur>
+                  <feOffset
+                    dy="2"
+                    in="shadowBlurInner1"
+                    result="shadowOffsetInner1"
+                  ></feOffset>
+                  <feComposite
+                    in="shadowOffsetInner1"
+                    in2="SourceAlpha"
+                    operator="arithmetic"
+                    k2="-1"
+                    k3="1"
+                    result="shadowInnerInner1"
+                  ></feComposite>
+                  <feColorMatrix
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.109620848 0"
+                    in="shadowInnerInner1"
+                  ></feColorMatrix>
+                </filter>
+                <path id="pintu_logo_mono__a" d="M0 0h1440v430H0z"></path>
+              </defs>
+              <g
+                transform="translate(-167 -6745)"
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <rect
+                  fill="none"
+                  y="4368"
+                  width="1440"
+                  height="2743"
+                  rx="20"
+                ></rect>
+                <g transform="translate(0 6681)">
+                  <use fill="none" xlink:href="#pintu_logo_mono__a"></use>
+                  <use
+                    fill="currentColor"
+                    filter="url(#pintu_logo_mono__b)"
+                    xlink:href="#pintu_logo_mono__a"
+                  ></use>
+                </g>
+                <g opacity="0.803" fill="currentColor" fill-rule="nonzero">
+                  <path d="M195 6745v20h-3v-20h3zM249.512 6745v14.495c0 .946.667 1.738 1.54 1.895l.166.022.163.007h4.233c.916 0 1.689-.683 1.842-1.586l.022-.172.006-.168V6745H261v14.49c-.003 2.849-2.122 5.209-4.864 5.484l-.259.02-.263.006h-4.233c-2.785-.006-5.086-2.175-5.355-4.974l-.02-.264-.006-.269V6745h3.512zM226 6748.586V6745l15 .005v3.58h-4.07c-.86.02-1.579.694-1.725 1.58l-.02.17-.008.174V6765h-3.354v-14.49c-.001-.932-.617-1.716-1.435-1.888l-.156-.025-.157-.011H226zM179.712 6745c2.74.003 5.002 2.177 5.263 4.98l.019.265.006.269v3.093c-.003 2.848-2.083 5.208-4.775 5.483l-.254.02-.259.006h-7.424c-.9.001-1.657.683-1.808 1.585l-.02.172-.008.168V6765H167v-14.497l.007-.269c.132-2.735 2.177-4.947 4.777-5.208l.253-.02.25-.006h7.425zm0 3.585h-7.424c-.486 0-.952.202-1.296.562-.259.27-.433.615-.504.98l-.026.183-.01.204v3.092c.001.947.655 1.739 1.513 1.896l.163.022.16.007h7.424c.9-.001 1.657-.683 1.808-1.585l.02-.171.008-.168v-3.098c-.001-1.064-.824-1.923-1.836-1.924zM213.969 6745c2.778.003 5.028 2.41 5.031 5.38V6765h-3.285v-14.62c-.001-1.034-.783-1.87-1.747-1.871h-5.936c-.964 0-1.746.837-1.747 1.87V6765H203v-14.621c.003-2.969 2.253-5.376 5.032-5.379z"></path>
+                </g>
+              </g>
             </svg>
             <p>
               ACME Industries Ltd.
@@ -53,27 +107,36 @@ const Footer = () => {
             </p>
           </div>
           <div>
-            <span className="footer-title">Services</span>
-            <a className="link link-hover">Branding</a>
-            <a className="link link-hover">Design</a>
-            <a className="link link-hover">Marketing</a>
-            <a className="link link-hover">Advertisement</a>
+            <span className="footer-title">Alamat Perusahaan</span>
+            <p className="link link-hover">Kantor Pusat</p>
+            <p className="link link-hover">
+              The City Tower Lantai 27 Jalan M.H Thamrin No.81, Jakarta Pusat,
+              DKI Jakarta 10310 Indonesia
+            </p>
+            <p className="link link-hover">Kantor Pusat</p>
+            <p className="link link-hover">
+              The City Tower Lantai 27 Jalan M.H Thamrin No.81, Jakarta Pusat,
+              DKI Jakarta 10310 Indonesia
+            </p>
           </div>
           <div>
-            <span className="footer-title">Company</span>
-            <a className="link link-hover">About us</a>
-            <a className="link link-hover">Contact</a>
-            <a className="link link-hover">Jobs</a>
-            <a className="link link-hover">Press kit</a>
+            <span className="footer-title">Pintu</span>
+            <a className="link link-hover">Produk</a>
+            <a className="link link-hover">Harga Crypto</a>
+            <a className="link link-hover">Biaya Transaksi</a>
+            <a className="link link-hover">OTC</a>
+            <a className="link link-hover">FAQ</a>
+            <a className="link link-hover">Blog</a>
           </div>
           <div>
-            <span className="footer-title">Legal</span>
-            <a className="link link-hover">Terms of use</a>
-            <a className="link link-hover">Privacy policy</a>
-            <a className="link link-hover">Cookie policy</a>
+            <span className="footer-title">Perusahaan</span>
+            <a className="link link-hover">Tentang</a>
+            <a className="link link-hover">Hubungi Kami</a>
+            <a className="link link-hover">Karier</a>
+            <a className="link link-hover">Karier Engineering</a>
           </div>
         </footer>
-      </div>
+      </main>
     </>
   );
 };

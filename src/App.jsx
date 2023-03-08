@@ -17,7 +17,7 @@ const App = () => {
       <ContentList />
       <CryptoList />
       <UpFooter />
-      <div className="pt-40">
+      <div className="pt-60">
         <Footer />
       </div>
     </>

@@ -16,38 +16,34 @@ const Footer = () => {
   return (
     <>
       <main className="relative">
-        <section
-          className="bg-blue-600 mx-10 rounded-t-3xl absolute inset-x-1"
-          style={{ bottom: 570 }}
-        >
+        <section className="bg-blue-600 lg:mx-10 rounded-t-3xl lg:absolute lg:inset-x-1 lg:bottom-[570px] sm:mx-0">
           <div className="mx-10">
-            <div className="grid grid-cols-2 ">
-              <div className="grid grid-flow-row auto-rows-max py-10">
+            <div className="lg:grid grid-cols-2 sm:flex-wrap">
+              <div className="grid grid-flow-row auto-rows-max py-10 sm:py-2">
                 <p className="font-bold text-3xl text-white">
                   Mulai Investasi Sekarang
                 </p>
                 <p className="font-normal text-base text-white pt-2">
                   Daftar dalam hitungan menit, langsung mulai investasi.
                 </p>
-                <div className="py-6">
-                  <button className="btn btn-ghost capitalize text-blue-500 bg-white hover:bg-white w-1/2">
+                <div className="py-6 sm:py-4">
+                  <button className="btn btn-ghost capitalize text-blue-500 bg-white hover:bg-white lg:w-1/2 sm:w-full">
                     Download Sekarang
                   </button>
                 </div>
               </div>
-              <div className="flex justify-end mx-20">
+              <div className="flex lg:justify-end lg:mx-20 ">
                 <img
                   src={Brand}
                   alt="brand"
-                  className=" absolute bottom-0"
-                  width={420}
+                  className="lg:absolute lg:bottom-0 lg:w-[420px]"
                 />
               </div>
             </div>
           </div>
         </section>
 
-        <footer className="footer p-11 bg-base-200 text-base-content mt-10">
+        <footer className="footer p-11 bg-base-200 text-base-content lg:mt-10">
           <div>
             <svg
               width="94"
@@ -122,7 +118,7 @@ const Footer = () => {
               <FaYoutube size={20} />
             </div>
             <div>
-              <p className="text-black text-base font-bold pt-16">
+              <p className="text-black text-base font-bold lg:pt-16 sm:pt-4">
                 Terdaftar dan Diawasi
               </p>
               <img src={License} alt="license" className="w-40 py-4" />
@@ -173,6 +169,7 @@ const Footer = () => {
             <a className="cursor-pointer py-2">Karier Engineering</a>
           </div>
         </footer>
+
         <footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
           <div className="grid grid-flow-row auto-rows-max">
             <p className="text-sm text-gray-600">
@@ -199,6 +196,7 @@ const Footer = () => {
             </div>
           </div>
         </footer>
+
         <footer className="px-10 py-4 bg-blue-600 sticky bottom-0 z-50">
           <div className="flex flex-wrap mx-10 py-2 gap-4 justify-between">
             <p className="text-white font-bold text-base py-4">

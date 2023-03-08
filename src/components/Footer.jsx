@@ -1,19 +1,34 @@
 import React from "react";
 
+import Brand from "../assets/brand-ambassador.png";
+
 const Footer = () => {
   return (
     <>
       <div className="relative">
-        <main className="bg-blue-600 mx-10 rounded-t-3xl absolute bottom-48 inset-x-1">
+        <main className="bg-blue-600 mx-10 rounded-t-3xl absolute bottom-48 inset-x-1 h-full">
           <div className="mx-10">
-            <div className="grid grid-flow-col auto-cols-max">
-              <div>01</div>
-              <div>02</div>
-            </div>
-            <div className="grid grid-flow-row auto-rows-max">
-              <div>01</div>
-              <div>02</div>
-              <div>03</div>
+            <div className="grid grid-cols-2">
+              <div class="grid grid-flow-row auto-rows-max py-10">
+                <p className="font-bold text-3xl text-white">
+                  Mulai Investasi Sekarang
+                </p>
+                <p className="font-normal text-base text-white pt-2">
+                  Daftar dalam hitungan menit, langsung mulai investasi.
+                </p>
+                <div className="py-6">
+                  <button className="btn btn-ghost capitalize text-blue-500 bg-white hover:bg-white">
+                    Download Sekarang
+                  </button>
+                </div>
+              </div>
+              <div className="flex justify-end">
+                <img
+                  src={Brand}
+                  alt="brand"
+                  className="w-96 absolute bottom-0"
+                />
+              </div>
             </div>
           </div>
         </main>

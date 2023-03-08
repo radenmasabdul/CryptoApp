@@ -16,17 +16,17 @@ const Footer = () => {
   return (
     <>
       <main className="relative">
-        <section className="bg-blue-600 lg:mx-10 rounded-t-3xl lg:absolute lg:inset-x-1 lg:bottom-[570px] sm:mx-0">
+        <section className="bg-blue-600 lg:mx-10 rounded-t-3xl lg:h-[248px] lg:absolute lg:inset-x-1 lg:bottom-[570px] sm:mx-0">
           <div className="mx-10">
             <div className="lg:grid grid-cols-2 sm:flex-wrap">
-              <div className="grid grid-flow-row auto-rows-max py-10 sm:py-2">
+              <div className="grid grid-flow-row auto-rows-max py-10">
                 <p className="font-bold text-3xl text-white">
                   Mulai Investasi Sekarang
                 </p>
                 <p className="font-normal text-base text-white pt-2">
                   Daftar dalam hitungan menit, langsung mulai investasi.
                 </p>
-                <div className="py-6 sm:py-4">
+                <div className="py-6">
                   <button className="btn btn-ghost capitalize text-blue-500 bg-white hover:bg-white lg:w-1/2 sm:w-full">
                     Download Sekarang
                   </button>

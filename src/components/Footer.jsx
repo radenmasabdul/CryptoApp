@@ -18,11 +18,11 @@ const Footer = () => {
       <main className="relative">
         <section
           className="bg-blue-600 mx-10 rounded-t-3xl absolute inset-x-1"
-          style={{ bottom: 350 }}
+          style={{ bottom: 570 }}
         >
           <div className="mx-10">
             <div className="grid grid-cols-2 ">
-              <div class="grid grid-flow-row auto-rows-max py-10">
+              <div className="grid grid-flow-row auto-rows-max py-10">
                 <p className="font-bold text-3xl text-white">
                   Mulai Investasi Sekarang
                 </p>
@@ -53,7 +53,7 @@ const Footer = () => {
               width="94"
               height="20"
               viewBox="0 0 94 20"
-              class="sc-1cgb3j6-7 cWQvkx"
+              className="sc-1cgb3j6-7 cWQvkx"
             >
               <defs>
                 <filter
@@ -92,7 +92,7 @@ const Footer = () => {
               <g
                 transform="translate(-167 -6745)"
                 fill="none"
-                fill-rule="evenodd"
+                fillRule="evenodd"
               >
                 <rect
                   fill="none"
@@ -102,14 +102,14 @@ const Footer = () => {
                   rx="20"
                 ></rect>
                 <g transform="translate(0 6681)">
-                  <use fill="none" xlink:href="#pintu_logo_mono__a"></use>
+                  <use fill="none" xlinkHref="#pintu_logo_mono__a"></use>
                   <use
                     fill="currentColor"
                     filter="url(#pintu_logo_mono__b)"
-                    xlink:href="#pintu_logo_mono__a"
+                    xlinkHref="#pintu_logo_mono__a"
                   ></use>
                 </g>
-                <g opacity="0.803" fill="currentColor" fill-rule="nonzero">
+                <g opacity="0.803" fill="currentColor" fillRule="nonzero">
                   <path d="M195 6745v20h-3v-20h3zM249.512 6745v14.495c0 .946.667 1.738 1.54 1.895l.166.022.163.007h4.233c.916 0 1.689-.683 1.842-1.586l.022-.172.006-.168V6745H261v14.49c-.003 2.849-2.122 5.209-4.864 5.484l-.259.02-.263.006h-4.233c-2.785-.006-5.086-2.175-5.355-4.974l-.02-.264-.006-.269V6745h3.512zM226 6748.586V6745l15 .005v3.58h-4.07c-.86.02-1.579.694-1.725 1.58l-.02.17-.008.174V6765h-3.354v-14.49c-.001-.932-.617-1.716-1.435-1.888l-.156-.025-.157-.011H226zM179.712 6745c2.74.003 5.002 2.177 5.263 4.98l.019.265.006.269v3.093c-.003 2.848-2.083 5.208-4.775 5.483l-.254.02-.259.006h-7.424c-.9.001-1.657.683-1.808 1.585l-.02.172-.008.168V6765H167v-14.497l.007-.269c.132-2.735 2.177-4.947 4.777-5.208l.253-.02.25-.006h7.425zm0 3.585h-7.424c-.486 0-.952.202-1.296.562-.259.27-.433.615-.504.98l-.026.183-.01.204v3.092c.001.947.655 1.739 1.513 1.896l.163.022.16.007h7.424c.9-.001 1.657-.683 1.808-1.585l.02-.171.008-.168v-3.098c-.001-1.064-.824-1.923-1.836-1.924zM213.969 6745c2.778.003 5.028 2.41 5.031 5.38V6765h-3.285v-14.62c-.001-1.034-.783-1.87-1.747-1.871h-5.936c-.964 0-1.746.837-1.747 1.87V6765H203v-14.621c.003-2.969 2.253-5.376 5.032-5.379z"></path>
                 </g>
               </g>
@@ -171,6 +171,45 @@ const Footer = () => {
             <a className="cursor-pointer py-2">Hubungi Kami</a>
             <a className="cursor-pointer">Karier</a>
             <a className="cursor-pointer py-2">Karier Engineering</a>
+          </div>
+        </footer>
+        <footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
+          <div className="grid grid-flow-row auto-rows-max">
+            <p className="text-sm text-gray-600">
+              © 2023 PT. Pintu Kemana Saja. All Rights Reserved.
+            </p>
+            <p className="text-xs text-gray-600">
+              Perdagangan aset crypto merupakan aktivitas beresiko tinggi.
+              Kinerja pada masa lalu tidak mencerminkan kinerja di masa depan.
+              Kinerja historikal, expected return dan proyeksi probabilitas
+              disediakan untuk tujuan informasi dan illustrasi. Semua keputusan
+              perdagangan aset crypto merupakan keputusan independen oleh
+              pengguna.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <p className="text-xs font-thin text-gray-600 cursor-pointer link">
+                Syarat dan Ketentuan
+              </p>
+              <p className="text-xs font-thin text-gray-600 cursor-pointer link">
+                Kebijakan Privasi
+              </p>
+              <p className="text-xs font-thin text-gray-600 cursor-pointer link">
+                Kebijakan Sistem Manajemen Keamanan Informasi dan Layanan Cloud
+              </p>
+            </div>
+          </div>
+        </footer>
+        <footer className="px-10 py-4 bg-blue-600 sticky bottom-0 z-50">
+          <div className="flex flex-wrap mx-10 py-2 gap-4 justify-between">
+            <p className="text-white font-bold text-base py-4">
+              Investasi crypto simple, aman, dan tanpa ribet. Mulai dari Rp
+              11.000. Tertarik mulai berinvestasi?
+            </p>
+            <div className="grid grid-flow-col justify-end ">
+              <button className="btn btn-ghost capitalize text-blue-500 bg-white hover:bg-white w-full">
+                Unduh Pintu App
+              </button>
+            </div>
           </div>
         </footer>
       </main>

@@ -1,14 +1,27 @@
 import React from "react";
 
+import {
+  FaFacebook,
+  FaInstagramSquare,
+  FaTwitter,
+  FaTelegram,
+  FaYoutube,
+} from "react-icons/fa";
+
 import Brand from "../assets/brand-ambassador.png";
+import Iso from "../assets/iso27001.png";
+import License from "../assets/license-transparent.png";
 
 const Footer = () => {
   return (
     <>
       <main className="relative">
-        <section className="bg-blue-600 mx-10 rounded-t-3xl absolute bottom-64 inset-x-1 h-full">
+        <section
+          className="bg-blue-600 mx-10 rounded-t-3xl absolute inset-x-1"
+          style={{ bottom: 350 }}
+        >
           <div className="mx-10">
-            <div className="grid grid-cols-2">
+            <div className="grid grid-cols-2 ">
               <div class="grid grid-flow-row auto-rows-max py-10">
                 <p className="font-bold text-3xl text-white">
                   Mulai Investasi Sekarang
@@ -17,16 +30,17 @@ const Footer = () => {
                   Daftar dalam hitungan menit, langsung mulai investasi.
                 </p>
                 <div className="py-6">
-                  <button className="btn btn-ghost capitalize text-blue-500 bg-white hover:bg-white">
+                  <button className="btn btn-ghost capitalize text-blue-500 bg-white hover:bg-white w-1/2">
                     Download Sekarang
                   </button>
                 </div>
               </div>
-              <div className="flex justify-end">
+              <div className="flex justify-end mx-20">
                 <img
                   src={Brand}
                   alt="brand"
-                  className="w-96 absolute bottom-0"
+                  className=" absolute bottom-0"
+                  width={420}
                 />
               </div>
             </div>
@@ -100,40 +114,63 @@ const Footer = () => {
                 </g>
               </g>
             </svg>
-            <p>
-              ACME Industries Ltd.
+            <div className="grid grid-flow-col auto-cols-max py-4 gap-4 cursor-pointer">
+              <FaFacebook size={20} />
+              <FaInstagramSquare size={20} />
+              <FaTwitter size={20} />
+              <FaTelegram size={20} />
+              <FaYoutube size={20} />
+            </div>
+            <div>
+              <p className="text-black text-base font-bold pt-16">
+                Terdaftar dan Diawasi
+              </p>
+              <img src={License} alt="license" className="w-40 py-4" />
+              <div className="grid grid-flow-col auto-cols-max gap-2">
+                <img src={Iso} alt="iso" className="w-10" />
+                <img src={Iso} alt="iso" className="w-10" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <span className="text-black text-lg font-bold">
+              Alamat Perusahaan
+            </span>
+            <p className="text-black text-base font-bold">Kantor Pusat</p>
+            <p className="text-gray-600 font-normal text-sm">
+              The City Tower Lantai 27 <br />
+              Jalan M.H Thamrin No.81,
+              <br /> Jakarta Pusat, DKI Jakarta 10310
+              <br /> Indonesia
+            </p>
+            <p className="text-black text-base font-bold">
+              Operasional & Customer Support
+            </p>
+            <p className="text-gray-600 font-normal text-sm">
+              Rukan Permata Senayan Blok H1-H2
               <br />
-              Providing reliable tech since 1992
+              Jalan Tentara Pelajar, Jakarta
+              <br />
+              Selatan
+              <br /> DKI Jakarta 12210 <br />
+              Indonesia
             </p>
           </div>
           <div>
-            <span className="footer-title">Alamat Perusahaan</span>
-            <p className="link link-hover">Kantor Pusat</p>
-            <p className="link link-hover">
-              The City Tower Lantai 27 Jalan M.H Thamrin No.81, Jakarta Pusat,
-              DKI Jakarta 10310 Indonesia
-            </p>
-            <p className="link link-hover">Kantor Pusat</p>
-            <p className="link link-hover">
-              The City Tower Lantai 27 Jalan M.H Thamrin No.81, Jakarta Pusat,
-              DKI Jakarta 10310 Indonesia
-            </p>
+            <span className="text-black text-lg font-bold">Pintu</span>
+            <a className="cursor-pointer">Produk</a>
+            <a className="cursor-pointer py-2">Harga Crypto</a>
+            <a className="cursor-pointer">Biaya Transaksi</a>
+            <a className="cursor-pointer py-2">OTC</a>
+            <a className="cursor-pointer">FAQ</a>
+            <a className="cursor-pointer py-2">Blog</a>
           </div>
           <div>
-            <span className="footer-title">Pintu</span>
-            <a className="link link-hover">Produk</a>
-            <a className="link link-hover">Harga Crypto</a>
-            <a className="link link-hover">Biaya Transaksi</a>
-            <a className="link link-hover">OTC</a>
-            <a className="link link-hover">FAQ</a>
-            <a className="link link-hover">Blog</a>
-          </div>
-          <div>
-            <span className="footer-title">Perusahaan</span>
-            <a className="link link-hover">Tentang</a>
-            <a className="link link-hover">Hubungi Kami</a>
-            <a className="link link-hover">Karier</a>
-            <a className="link link-hover">Karier Engineering</a>
+            <span className="text-black text-lg font-bold">Perusahaan</span>
+            <a className="cursor-pointer">Tentang</a>
+            <a className="cursor-pointer py-2">Hubungi Kami</a>
+            <a className="cursor-pointer">Karier</a>
+            <a className="cursor-pointer py-2">Karier Engineering</a>
           </div>
         </footer>
       </main>

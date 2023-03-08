@@ -6,6 +6,7 @@ import Content from "./components/Content";
 import ContentList from "./components/ContentList";
 import CryptoList from "./components/CryptoList";
 import UpFooter from "./components/UpFooter";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <ContentList />
       <CryptoList />
       <UpFooter />
+      <Footer />
     </>
   );
 };

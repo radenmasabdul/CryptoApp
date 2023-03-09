@@ -3,7 +3,7 @@ import { getSupportCurrency, getPriceChange } from "../actions/apiRequest";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
 export const fetchSupportCurrency = createAsyncThunk(
-    "wallet/supportedCurrencies/fetchSupportCurrency",
+    "fetchSupportCurrency",
     async () => {
         const response = await getSupportCurrency();
         return response.data;
@@ -11,7 +11,7 @@ export const fetchSupportCurrency = createAsyncThunk(
 );
 
 export const fetchPriceChange = createAsyncThunk(
-    "trade/price-changes/fetchPriceChange",
+    "fetchPriceChange",
     async () => {
         const response = await getPriceChange();
         return response.data;

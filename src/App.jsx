@@ -1,26 +1,15 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
-import UpContent from "./components/UpContent";
-import Content from "./components/Content";
-import ContentList from "./components/ContentList";
-import CryptoList from "./components/CryptoList";
-import UpFooter from "./components/UpFooter";
-import Footer from "./components/Footer";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
-    <>
-      <Navbar />
-      <UpContent />
-      <Content />
-      <ContentList />
-      <CryptoList />
-      <UpFooter />
-      <div className="lg:pt-60 sm:pt-20">
-        <Footer />
-      </div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
